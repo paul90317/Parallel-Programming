@@ -1,0 +1,5 @@
+Control dependences are essentially the dominance frontier in the reverse graph of the control-flow graph (CFG).
+[2] Thus, one way of constructing them, would be to construct the post-dominance frontier of the CFG, 
+and then reversing it to obtain a control dependence graph.
+
+The following is a pseudo-code for constructing the post-dominance frontier:

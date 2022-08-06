@@ -1,0 +1,12 @@
+The basic idea is that for each element a[i] in the list a, 
+we count the number of elements in the list that are less than a[i]. Then we insert a[i] into a temporary list using the subscript determined by the count. 
+There’s a slight problem with this approach when the list contains equal elements, since they could get assigned to the same slot in the temporary list. The code deals with this by incrementing the count for equal elements on the basis of the subscripts. If both a[i] == a[j] and j <i, then we count a[j] as being “less than” a[i].
+After the algorithm has completed, we overwrite the original array with the temporary array using the string library function memcpy.
+
+Please answer the following questions:
+
+If we try to parallelize the for i loop (the outer loop), which variables should be private and which should be shared?
+If we parallelize the for i loop using the scoping you speciﬁed in the previous part,are there any loop-carried dependences? Explain your answer.
+Can we parallelize the call to memcpy? Can we modify the code so that this part of the function will be parallelizable?
+Write a C program that includes a parallel implementation of Count sort.
+How does the performance of your parallelization of Count sort compare to serial Count sort? How does it compare to the serial qsort library function?

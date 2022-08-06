@@ -1,0 +1,23 @@
+{
+    "files.associations": {
+        "xutility": "cpp",
+        "xlocale": "cpp",
+        "xlocnum": "cpp",
+        "utility": "cpp",
+        "ostream": "cpp",
+        "xiosbase": "cpp",
+        "iosfwd": "cpp",
+        "iostream": "cpp",
+        "exception": "cpp",
+        "fstream": "cpp",
+        "ios": "cpp",
+        "istream": "cpp",
+        "memory": "cpp",
+        "streambuf": "cpp",
+        "tuple": "cpp",
+        "vector": "cpp",
+        "xstring": "cpp",
+        "limits": "cpp",
+        "random": "cpp"
+    }
+}
